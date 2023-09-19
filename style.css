@@ -1,0 +1,248 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* common css end */
+/* nav section start */
+nav{
+    background-color: #02918c;
+}
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffff;
+    text-transform: uppercase;
+    padding: 19px 25px;
+    display: inline-block;
+    transition: .5s;
+
+}
+nav ul li a:hover{
+    color: #cfc91d;
+}
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.heading p{
+    font-size: 16px;
+    color: #7e8287;
+}
+
+/* nav section end */
+/* banner section start */
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./logo.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 133px 140px;
+    
+}
+#banner .container h1{
+    font-size: 62pt;
+    color: #ffff;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+#banner .container h3{
+    font-size: 20pt;
+    color: #ffff;
+}
+#banner .container p{
+    color: #ffff;
+    font-size: 14pt;
+}
+#banner .container a{
+    color: black;
+    display: inline-block;
+    background-color: #cfc91d;
+    padding: 24px 98px;
+    letter-spacing: 5px;
+    font-size: 14pt;
+    transition: .4s;
+}
+/* banner section end */
+/* about section start */
+#about{
+    text-align: center;
+    padding: 90px 110px;
+}
+.container .heading{
+    text-align: center;
+}
+
+.container .heading h2{
+    font-weight: 800;
+    font-size: 46px;
+    color: #02918c;
+    text-transform: uppercase;
+}
+
+.container .heading p{
+    font-size: 16px;
+    color: #7e8287;
+}
+.container .heading .padding{
+    padding: 30px;
+}
+.container .heading p span{
+    font-size: 23px;
+}
+#about{
+    padding: 98px 0;
+}
+#about .about_cards{
+    margin-top: 50px;
+}
+
+#about .about_card{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 36px 0;
+}
+
+#about .about_card span{
+    font-size: 30px;
+    color: #02918c;
+}
+
+#about .about_card h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 28px 0;
+}
+
+#about .about_card p{
+    color: #7e8287;
+    font-size: 11px;
+    line-height: 16.5px;
+}
+
+#about .about_card:last-child {
+    border: none;
+    
+}
+
+/* about section end */
+/* services section start */
+.services{
+    width: 100%;
+    background-image: url(./pic.jpg);
+    margin: 10px;
+    padding: 10px;
+    background-size: cover;
+    
+}
+.services .heading{
+    text-align: left;
+}
+.services p{
+    padding: 10px;
+}
+.services .row{
+    width: 45%;
+    justify-content: space-between;
+    
+}
+#services .services_cards{
+    margin-top: 50px;
+}
+
+#services .services_card{
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 36px 0;
+    justify-content: space-between;
+}
+.services_card span{
+    font-size: 30px;
+    color: #02918c;
+}
+
+.services_card h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 28px 0;
+}
+
+.services_card p{
+    color: #7e8287;
+    font-size: 11px;
+    line-height: 16.5px;
+}
+
+/* services section end */
+/* work section start */
+.work .heading {
+    margin: 40px 0;
+}
+/* work section end */
+/* pic section start */
+  
+#pic{
+    padding: 70px 0;
+    width: 100%;
+}
+#pic .pic_card{
+    width: 25%;
+    position: relative;
+}
+#pic .pic_card img{
+    width: 100%;
+    display: block;
+}
+#pic .pic_card .overlay{
+    background-color: #02918cb4;
+    position: absolute;
+    inset: 20px;
+    color: #ffff;
+    text-align: center;
+    padding-top: 70px 0;
+    transform: scale(0);  
+
+}
+#pic .pic_card h4{
+    padding-top: 50px;
+    font-size: 20px;
+}
+#pic .pic_card:hover .overlay{
+    transition: 0.5s;
+    transform: scale(1);
+}
+/* pic section end */
+
